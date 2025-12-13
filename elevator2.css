@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:ㄴ 0;
+    position: relative;
+}
+
+.home {
+    background-image: url('image/home_horizonal.webp');
+    height: 100vh;
+}
+
+.onef_home {
+    background-image: url('image/arrive.webp');
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+.twof_home {
+    background-image: url('image/speaker.webp');
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+.threef_home {
+    background-image: url('image/dot-upanddown.png');
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+.fourf_home {
+    background-image: url('image/pattern_1.webp');
+    height: 100vh;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.fivef_home {
+    background-image: url('image/edge.webp');
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.open_home {
+    background-image: url('image/open4.webp');
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+.close_home {
+    background-image: url('image/close2.webp');
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+.two {
+    display: flex;
+    margin-left: 5%;
+}
+
+.three {
+    display: flex;
+    margin-left: 5%;
+}
+
+.four {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: left center;
+}
+
+.five {
+    position: absolute;
+    top: 70%;
+    width: 40%;
+}
+
+.openf {
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    transform: rotate(-52deg);
+    transform-origin: left center;
+}
+
+.closef {
+    position: relative;
+    top: 5%;
+}
+
+.foothome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #212529;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    color: #212529;
+}
+
+h1 {
+    text-align: left;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-left: 5%;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 500;
+    word-break: keep-all;
+    color: white;
+    font-size: 24px;
+    margin-left: 5%;
+}
+
+p {
+    text-align: left;
+    word-break: keep-all;
+    margin-left: 5%;
+    margin-right: 20%;
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+}
+
+nav section {
+    position: absolute;
+    width: 155px;
+    height: 80px;
+    background: transparent;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.open {
+    position: absolute;
+    width: 155px;
+    height: 80px;
+    left: 15%;
+    top: 65%;
+}
+
+.close {
+    position: absolute;
+    width: 155px;
+    height: 80px;
+    left: 25%;
+    top: 65%;
+}
+
+.open img,
+.close img {
+    width: 100%;
+    display: block;
+}
+
+.empty {
+    height: 60%;
+    width: auto;
+    top: 0;
+}
+
+.b {
+    height: 2%;
+    width: auto;
+    bottom: 0;
+}
+
+.onef:hover img {
+    content: url("image/button-1.png");
+}
+
+.twof:hover img {
+    content: url("image/button-2.png");
+}
+
+.threef:hover img {
+    content: url("image/button-3.png");
+}
+
+.fourf:hover img {
+    content: url("image/button-4.png");
+}
+
+.fivef:hover img {
+    content: url("image/button-5.png");
+}
+
+.open:hover img {
+    content: url("image/button-o.png");
+}
+
+.close:hover img {
+    content: url("image/button-c.png");
+}
+
+.lfloor {
+    text-align: left;
+    word-break: keep-all;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-bottom: 80px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.onef { left: 40%; }
+.twof { left: 50%; }
+.threef { left: 60%; }
+.fourf { left: 70%; }
+.fivef { left: 80%; }
+
+nav img {
+    width: 100%;
+    display: block;
+}
+
+.back {
+    position: fixed;
+    width: 45px;
+    right: 5%;
+    top: 5%;
+    border: dotted;
+    color: white;
+}
+
+.back a {
+    color: white;
+}
+
+.back:hover {
+    border: solid;
+    color: orangered;
+}
+
+.back a:hover {
+    color: orangered;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        margin: 0;
+        width: auto;
+    }
+
+    .home {
+        background-image: url('image/home_vertical.webp');
+    }
+
+    .onef_home {
+        background-image: url('image/pulley.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .twof_home {
+        background-image: url('image/red-alarm.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .threef_home {
+        background-image: url('image/color_2.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .fourf_home {
+        background-image: url('image/pattern_2.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .fivef_home {
+        background-image: url('image/full.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .open_home {
+        background-image: url('image/open3.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .close_home {
+        background-image: url('image/close.webp');
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        padding-top: 15%;
+    }
+
+    nav section {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 155px;
+        height: 80px;
+    }
+
+    .onef, .twof, .threef, .fourf, .fivef {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+
+    .open,
+    .close {
+        position: absolute;
+        width: 150px;
+        height: 80px;
+        top: 80%;
+    }
+
+    .open {
+        left: 30%;
+        transform: translateX(-50%);
+    }
+
+    .close {
+        left: 70%;
+        transform: translateX(-50%);
+    }
+
+    h1 {
+        text-align: left;
+        color: white;
+        font-size: 28px;
+        margin-top: 60px;
+        margin-left: 5%;
+    }
+
+    h2 {
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    p {
+        text-align: left;
+        word-break: keep-all;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: white;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .one {
+        display: block;
+        position: absolute;
+        width: 80%;
+        left: 20%;
+    }
+
+    .two {
+        display: block;
+        position: absolute;
+        width: 50%;
+        right: 0;
+    }
+
+    .three {
+        display: block;
+    }
+
+    .four {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: none;
+    }
+
+    .five {
+        position: relative;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        transform: none;
+    }
+
+    .openf {
+        position: relative;
+        left: 70%;
+        top: 10%;
+        width: 15%;
+        transform: none;
+    }
+
+    .lfloor {
+        text-align: left;
+        word-break: keep-all;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 80px;
+        color: white;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+}
