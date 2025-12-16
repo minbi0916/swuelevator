@@ -114,11 +114,11 @@ body {
 
 footer {
     position: fixed;
-    transform: rotate(90deg);
-    transform-origin: left center;
     bottom: 10px;
     right: 10px;
-    width: 100%;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    width: auto;
 }
 
 footer p {
@@ -178,8 +178,9 @@ nav section {
     width: 155px;
     height: 80px;
     background: transparent;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
+    left: 50%;
 }
 
 .open {
@@ -187,7 +188,7 @@ nav section {
     width: 155px;
     height: 80px;
     left: 15%;
-    top: 65%;
+    top: 60%;
 }
 
 .close {
@@ -195,7 +196,7 @@ nav section {
     width: 155px;
     height: 80px;
     left: 25%;
-    top: 65%;
+    top: 60%;
 }
 
 .open img,
@@ -268,8 +269,7 @@ nav img {
 
 .back {
     position: fixed;
-    width: 50px
-    right: 90%;
+    right: 5%;
     top: 5%;
     color: white;
     border: solid;
