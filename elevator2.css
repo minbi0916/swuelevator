@@ -5,12 +5,13 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    margin:ㄴ 0;
+    margin: 0;
     position: relative;
 }
 
 .home {
     background-image: url('image/home_horizonal.webp');
+    background-position: center;
     height: 100vh;
 }
 
@@ -122,7 +123,9 @@ body {
 
 footer {
     position: fixed;
-    bottom: 0;
+    transform: rotate(90deg);
+    bottom: 10px;
+    right: 10px;
     width: 100%;
 }
 
@@ -264,24 +267,15 @@ nav img {
 
 .back {
     position: fixed;
-    width: 45px;
+    width: 50px
     right: 5%;
     top: 5%;
-    border: dotted;
     color: white;
+    border: solid;
 }
 
 .back a {
     color: white;
-}
-
-.back:hover {
-    border: solid;
-    color: orangered;
-}
-
-.back a:hover {
-    color: orangered;
 }
 
 @media screen and (max-width: 900px) {
@@ -295,6 +289,8 @@ nav img {
 
     .home {
         background-image: url('image/home_vertical.webp');
+        align-content: center;
+        
     }
 
     .onef_home {
@@ -417,6 +413,7 @@ nav img {
         font-size: 28px;
         margin-top: 60px;
         margin-left: 5%;
+        position: fixed;
     }
 
     h2 {
@@ -436,7 +433,7 @@ nav img {
         margin-left: 5%;
         margin-right: 5%;
         color: white;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.7;
     }
 
@@ -489,7 +486,7 @@ nav img {
         margin-right: 5%;
         margin-bottom: 80px;
         color: white;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.7;
     }
 }
